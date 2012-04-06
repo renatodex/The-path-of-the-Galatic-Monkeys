@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  wl: 1
+  wm: 1
+  wr: 1
+  left: MyString
+  main: MyString
+  right: MyString
+  titulo: MyString
+  desc: MyText
+
+two:
+  nome: MyString
+  wl: 1
+  wm: 1
+  wr: 1
+  left: MyString
+  main: MyString
+  right: MyString
+  titulo: MyString
+  desc: MyText
