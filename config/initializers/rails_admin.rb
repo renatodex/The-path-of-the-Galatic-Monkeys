@@ -81,32 +81,16 @@ RailsAdmin.config do |config|
   # All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible. (visible(true))
 
   config.model StoryPage do
-     # Found associations:
-     # Found columns:
        configure :id, :integer
        configure :nome, :string
        configure :wl, :integer
        configure :wm, :integer
        configure :wr, :integer
-       #configure :left, :string
-       #configure :main, :string
-       #configure :right, :string
        configure :titulo, :string
        configure :desc, :text
-       #configure :created_at, :datetime
-       #configure :updated_at, :datetime
        configure :left_file_name, :string
-       #configure :left_content_type, :string
-       #configure :left_file_size, :integer
-       #configure :left_updated_at, :datetime
        configure :main_file_name, :string
-       #configure :main_content_type, :string
-       #configure :main_file_size, :integer
-       #configure :main_updated_at, :datetime
        configure :right_file_name, :string
-       #configure :right_content_type, :string
-       #configure :right_file_size, :integer
-       #configure :right_updated_at, :datetime   #   # Sections:
      list do; end
      export do; end
      show do; end
