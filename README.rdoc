@@ -1,6 +1,6 @@
 = The Path of the Galatic Monkeys
 
-O caminho dos macacos galáticos é um refactory do projeto original "The Path of the Monekeys".
+O caminho dos macacos galáticos é um refactory do projeto original "The Path of the Monkeys".
 O objetivo do projeto é descrever através de ilustrações e de forma dinamica a trajetória de meu grupo de RPG de Dungeon & Dragons.
 
 A autoria das ilustrações é do Swordmage do grupo, Francesco Silva.
