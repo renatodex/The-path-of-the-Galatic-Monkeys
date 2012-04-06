@@ -1,0 +1,20 @@
+<div class="formulario_login">
+    <h1>Admin Épico</h1>
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      <div><%= f.label :email %><br />
+      <%= f.email_field :email %></div>
+
+      <div><%= f.label :password %><br />
+      <%= f.password_field :password %></div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+      <% end -%>
+
+      <%= f.submit :enviar, :class => 'botaoenviar'%>
+    <% end %>
+
+    <div class="links">
+        <%= render "links" %>
+    </div>
+</div>
