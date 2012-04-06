@@ -1,0 +1,2 @@
+module StoryPageHelper
+end
