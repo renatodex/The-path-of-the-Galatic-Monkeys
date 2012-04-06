@@ -1,23 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  id: 1
   nome: MyString
-  wl: 1
+  wl: 5
   wm: 1
   wr: 1
-  left: MyString
-  main: MyString
-  right: MyString
   titulo: MyString
   desc: MyText
 
 two:
+  id: 2
   nome: MyString
-  wl: 1
+  wl: 10
   wm: 1
   wr: 1
-  left: MyString
-  main: MyString
-  right: MyString
   titulo: MyString
   desc: MyText

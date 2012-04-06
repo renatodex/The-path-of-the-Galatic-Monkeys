@@ -3,4 +3,8 @@ class StoryPage < ActiveRecord::Base
   has_attached_file :left, :styles => { :medium => "300x300>", :thumb => "100x100>" }
   has_attached_file :main, :styles => { :medium => "300x300>", :thumb => "100x100>" }
   has_attached_file :right, :styles => { :medium => "300x300>", :thumb => "100x100>" }
+
+  def next
+    StoryPage.where('story_pages.id > ?', self.id).last
+  end
 end
