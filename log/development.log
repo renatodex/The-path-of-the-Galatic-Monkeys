@@ -22515,3 +22515,387 @@ Processing by RailsAdmin::MainController#index as HTML
   [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `story_pages` [0m
   Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (84.3ms)
 Completed 200 OK in 102ms (Views: 92.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Processing by StoryPageController#index as HTML
+  [1m[36mStoryPage Load (0.4ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` [0m
+  [1m[35mStoryPage Load (0.6ms)[0m  SELECT `story_pages`.* FROM `story_pages` WHERE (story_pages.id > 2) ORDER BY `story_pages`.`id` DESC LIMIT 1
+  [1m[36mStoryPage Load (0.5ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` WHERE (story_pages.id > 3) ORDER BY `story_pages`.`id` DESC LIMIT 1[0m
+  Rendered story_page/index.html.erb within layouts/story_page (38.6ms)
+Completed 200 OK in 238ms (Views: 199.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/story_page.css?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /story_page.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /jquery.js - 304 Not Modified (119ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.easing.1.3.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /jquery.easing.1.3.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.scrollTo-min.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /jquery.scrollTo-min.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/story_page.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /story_page.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/703-logo.png" for 127.0.0.1 at Fri Apr 06 20:35:25 -0300 2012
+Served asset /703-logo.png - 304 Not Modified (31ms)
+
+
+Started GET "/assets/703-bg-intro.jpg" for 127.0.0.1 at Fri Apr 06 20:35:26 -0300 2012
+Served asset /703-bg-intro.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/703-play.png" for 127.0.0.1 at Fri Apr 06 20:35:26 -0300 2012
+Served asset /703-play.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/703-bg-descritivo.png" for 127.0.0.1 at Fri Apr 06 20:35:26 -0300 2012
+Served asset /703-bg-descritivo.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/703-separador.png" for 127.0.0.1 at Fri Apr 06 20:35:26 -0300 2012
+Served asset /703-separador.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at Fri Apr 06 20:35:26 -0300 2012
+Served asset /favicon.ico - 304 Not Modified (3ms)
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at Fri Apr 06 20:35:28 -0300 2012
+Served asset /favicon.ico - 304 Not Modified (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at Fri Apr 06 20:35:34 -0300 2012
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `story_pages` [0m
+  [1m[35mStoryPage Load (0.4ms)[0m  SELECT `story_pages`.* FROM `story_pages` ORDER BY updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` ORDER BY updated_at desc LIMIT 1
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (57.2ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (98.3ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/layouts/rails_admin/pjax.html.haml (14.9ms)
+Completed 200 OK in 606ms (Views: 548.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/rails_admin/imports.css?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /rails_admin/imports.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /rails_admin/rails_admin.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.iframe-transport.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.remotipart.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.effects.core.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.effects.core.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.core.js - 304 Not Modified (111ms)
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.widget.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.mouse.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.sortable.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.position.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.autocomplete.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /jquery.ui.datepicker.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:35 -0300 2012
+Served asset /rails_admin/jquery.ui.timepicker.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ra.datetimepicker.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ra.filter-box.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ra.filtering-multiselect.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ra.filtering-select.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ra.remote-form.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/jquery.pjax.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /jquery_nested_form.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ra.nested-form-hooks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-transition.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-alert.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-button.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-carousel.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-collapse.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-dropdown.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-modal.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-tab.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-tooltip.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-popover.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap-typeahead.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /bootstrap.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/themes/default/ui.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/themes/default/ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/custom/ui.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at Fri Apr 06 20:35:36 -0300 2012
+Served asset /rails_admin/rails_admin.js - 304 Not Modified (225ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.0.0.1 at Fri Apr 06 20:35:37 -0300 2012
+Served asset /glyphicons-halflings.png - 304 Not Modified (36ms)
+
+
+Started GET "/admin/story_page?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:35:38 -0300 2012
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story_page", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mStoryPage Load (0.5ms)[0m  SELECT `story_pages`.* FROM `story_pages` ORDER BY story_pages.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `story_pages` [0m
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (288.3ms)
+Completed 200 OK in 337ms (Views: 323.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/glyphicons-halflings-white.png" for 127.0.0.1 at Fri Apr 06 20:35:39 -0300 2012
+Served asset /glyphicons-halflings-white.png - 304 Not Modified (49ms)
+
+
+Started GET "/admin/story_page/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:35:43 -0300 2012
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"story_page", "id"=>"3", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mStoryPage Load (0.5ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` WHERE `story_pages`.`id` = 3 LIMIT 1[0m
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (2.2ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.7ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_text.html.haml (5.0ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (15.0ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (7.4ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (6.7ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_submit_buttons.html.haml (12.3ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (229.5ms)
+Completed 200 OK in 376ms (Views: 365.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/story_page?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:35:47 -0300 2012
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story_page", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mStoryPage Load (0.5ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` ORDER BY story_pages.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `story_pages` 
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (57.7ms)
+Completed 200 OK in 106ms (Views: 93.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/story_page/2/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:35:49 -0300 2012
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"story_page", "id"=>"2", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mStoryPage Load (0.6ms)[0m  SELECT `story_pages`.* FROM `story_pages` WHERE `story_pages`.`id` = 2 LIMIT 1
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_text.html.haml (1.0ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (6.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (6.1ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (6.7ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_submit_buttons.html.haml (2.4ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (102.3ms)
+Completed 200 OK in 320ms (Views: 308.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/story_page?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:36:55 -0300 2012
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story_page", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  [1m[35mStoryPage Load (0.5ms)[0m  SELECT `story_pages`.* FROM `story_pages` ORDER BY story_pages.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `story_pages` [0m
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (56.9ms)
+Completed 200 OK in 98ms (Views: 87.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/story_page/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:36:58 -0300 2012
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"model_name"=>"story_page", "id"=>"3", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mStoryPage Load (0.5ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` WHERE `story_pages`.`id` = 3 LIMIT 1[0m
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_text.html.haml (0.9ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (6.5ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (6.2ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (122.7ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_submit_buttons.html.haml (2.4ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (217.3ms)
+Completed 200 OK in 253ms (Views: 243.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/story_page?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:38:16 -0300 2012
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"story_page", "_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  [1m[36mStoryPage Load (0.6ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` ORDER BY story_pages.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `story_pages` 
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (58.9ms)
+Completed 200 OK in 193ms (Views: 182.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/story_page/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at Fri Apr 06 20:38:38 -0300 2012
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"model_name"=>"story_page", "_pjax"=>"[data-pjax-container]"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.9ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.8ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.8ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.8ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_field.html.haml (0.8ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_text.html.haml (1.0ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (2.2ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (2.3ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_form_file_upload.html.haml (2.2ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/_submit_buttons.html.haml (2.2ms)
+  Rendered /Users/renatoalves/.bundler/ruby/1.8/rails_admin-b8edd0ebeea0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (193.1ms)
+Completed 200 OK in 225ms (Views: 215.8ms | ActiveRecord: 0.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (53.5ms)[0m  DROP DATABASE IF EXISTS `703_db_test`
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE `703_db_test` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`[0m
+  [1m[35m (49.4ms)[0m  CREATE TABLE `rails_admin_histories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `message` text, `username` varchar(255), `item` int(11), `table` varchar(255), `month` smallint, `year` bigint, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (253.8ms)[0m  [1mCREATE INDEX `index_rails_admin_histories` ON `rails_admin_histories` (`item`, `table`, `month`, `year`)[0m
+  [1m[35m (105.7ms)[0m  CREATE TABLE `story_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `wl` int(11), `wm` int(11), `wr` int(11), `titulo` varchar(255), `desc` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `left_file_name` varchar(255), `left_content_type` varchar(255), `left_file_size` int(11), `left_updated_at` datetime, `main_file_name` varchar(255), `main_content_type` varchar(255), `main_file_size` int(11), `main_updated_at` datetime, `right_file_name` varchar(255), `right_content_type` varchar(255), `right_file_size` int(11), `right_updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (117.3ms)[0m  [1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (113.4ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36m (110.3ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)[0m
+  [1m[35m (105.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (113.6ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120406022737')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120406013206')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120406015820')[0m
+  [1m[35m (0.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120406015915')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120406015941')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120406020317')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120406020318')[0m

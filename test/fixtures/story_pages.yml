@@ -17,3 +17,12 @@ two:
   wr: 1
   titulo: MyString
   desc: MyText
+
+three:
+  id: 3
+  nome: MyString
+  wl: 15
+  wm: 1
+  wr: 1
+  titulo: MyString
+  desc: MyText
