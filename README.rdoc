@@ -1,5 +1,7 @@
 = The Path of the Galatic Monkeys
 
+{<img src="https://secure.travis-ci.org/renatodex/The-path-of-the-Galatic-Monkeys.png?branch=master" alt="Build Status" />}[http://travis-ci.org/renatodex/The-path-of-the-Galatic-Monkeys]
+
 O caminho dos macacos galáticos é um refactory do projeto original "The Path of the Monkeys".
 O objetivo do projeto é descrever através de ilustrações e de forma dinamica a trajetória de meu grupo de RPG de Dungeon & Dragons.
 
