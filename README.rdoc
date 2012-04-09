@@ -6,4 +6,4 @@ O objetivo do projeto é descrever através de ilustrações e de forma dinamica
 A autoria das ilustrações é do Swordmage do grupo, Francesco Silva.
 O projeto é uma iniciativa de outro membro do grupo, Pipo Bizelli, que teve a iniciativa de criar o primeiro prototipo funcional do projeto.
 
-O projeto ainda está em andamento.
+O projeto ainda está em andamento..
