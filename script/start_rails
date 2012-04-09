@@ -1,0 +1,2 @@
+echo '----- INICIANDO SERVIDOR'
+rails s -d

@@ -1,0 +1,4 @@
+echo '----- REINICIANDO SERVIDOR'
+sh stop_rails
+sh start_rails
+
