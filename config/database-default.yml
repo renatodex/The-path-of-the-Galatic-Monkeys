@@ -8,7 +8,6 @@ development:
   database: 703_db_local
   pool: 5
   timeout: 5000
-  socket: /Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -18,7 +17,6 @@ test:
   database: 703_db_test
   pool: 5
   timeout: 5000
-  socket: /Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
 
 production:
   adapter: mysql2
