@@ -6,7 +6,7 @@ rvm:
 bundler_args: --without production development
 
 before_script:
-  - "cp config/database-sample.yml config/database.yml"
+  - "cp config/database-default.yml config/database.yml"
   - "bundle exec rake db:test:load db:test:prepare"
 
 script: "bundle exec rake"
