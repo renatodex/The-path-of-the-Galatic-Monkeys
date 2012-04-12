@@ -12,7 +12,7 @@ class StoryPage < ActiveRecord::Base
     main.url
   end
   
-  def right_url_ful
+  def right_url_full
     right.url
   end
 
