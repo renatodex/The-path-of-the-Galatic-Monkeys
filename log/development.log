@@ -22899,3 +22899,12 @@ Completed 200 OK in 225ms (Views: 215.8ms | ActiveRecord: 0.6ms)
   [1m[36m (0.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120406015941')[0m
   [1m[35m (0.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20120406020317')
   [1m[36m (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20120406020318')[0m
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateStoryPages (20120406013206)
+Migrating to AddAttachmentLeftToStoryPage (20120406015820)
+Migrating to AddAttachmentMainToStoryPage (20120406015915)
+Migrating to AddAttachmentRightToStoryPage (20120406015941)
+Migrating to DeviseCreateUsers (20120406020317)
+Migrating to CreateRailsAdminHistoriesTable (20120406020318)
+Migrating to RemoveOldLeftMainRight (20120406022737)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
