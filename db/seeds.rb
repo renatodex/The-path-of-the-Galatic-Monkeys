@@ -8,6 +8,6 @@
 
 user = User.create(
   :email                => 'renatodex@gmail.com',
-  :password   => '2410rna',
-  :password_confirmation        => '2410rna'
+  :password   => '101010',
+  :password_confirmation        => '101010'
 )
