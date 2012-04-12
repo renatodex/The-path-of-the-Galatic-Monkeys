@@ -547,3 +547,18 @@ Mysql2::Error: Unknown column 'password' in 'field list': INSERT INTO `users` (`
   [1m[36mStoryPage Load (0.4ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` [0m
   [1m[35mStoryPage Load (0.6ms)[0m  SELECT `story_pages`.* FROM `story_pages` WHERE (story_pages.id > 1) LIMIT 1
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `story_pages`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `story_pages` (`wm`, `created_at`, `updated_at`, `titulo`, `nome`, `wr`, `id`, `desc`, `wl`) VALUES (1, '2012-04-12 05:04:19', '2012-04-12 05:04:19', 'MyString', 'MyString', 1, 3, 'MyText', 15)[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO `story_pages` (`wm`, `created_at`, `updated_at`, `titulo`, `nome`, `wr`, `id`, `desc`, `wl`) VALUES (1, '2012-04-12 05:04:19', '2012-04-12 05:04:19', 'MyString', 'MyString', 1, 2, 'MyText', 10)
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `story_pages` (`wm`, `created_at`, `updated_at`, `titulo`, `nome`, `wr`, `id`, `desc`, `wl`) VALUES (1, '2012-04-12 05:04:19', '2012-04-12 05:04:19', 'MyString', 'MyString', 1, 1, 'MyText', 5)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `users` (`encrypted_password`, `created_at`, `updated_at`, `id`, `email`) VALUES (101010, '2012-04-12 05:04:19', '2012-04-12 05:04:19', 980190962, 'renatodex@gmail.com')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mStoryPage Load (0.2ms)[0m  [1mSELECT `story_pages`.* FROM `story_pages` [0m
+  [1m[35mStoryPage Load (0.4ms)[0m  SELECT `story_pages`.* FROM `story_pages` WHERE (story_pages.id > 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
