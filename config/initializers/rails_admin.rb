@@ -83,9 +83,9 @@ RailsAdmin.config do |config|
   config.model StoryPage do
        configure :id, :integer
        configure :nome, :string
-       #configure :wl, :integer
-       #configure :wm, :integer
-       #configure :wr, :integer
+       configure :wl, :hidden
+       configure :wm, :hidden
+       configure :wr, :hidden
        configure :titulo, :string
        configure :desc, :text
        configure :left_file_name, :string
