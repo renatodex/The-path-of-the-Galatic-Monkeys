@@ -2,11 +2,11 @@
   <% @next_story_page = story_page.next %>
   <div class="contend" id="<%=story_page.nome%>">
     <ul>
-      <li style="width:<%=story_page.wl%>px; background:url(<%=story_page.left.url%>) no-repeat center right;"></li>
-      <li class="main" style="width:<%=story_page.wm%>px; background:url(<%=story_page.main.url%>) no-repeat center center;">
+      <li style="width:<%=story_page.left_width%>px; background:url(<%=story_page.left.url%>) no-repeat center right;"></li>
+      <li class="main" style="width:<%=story_page.main_width%>px; background:url(<%=story_page.main.url%>) no-repeat center center;">
         <%=story_page.titulo%>
       </li>
-      <li style="width:<%=story_page.wr%>px; background:url(<%=story_page.right.url%>) no-repeat left center;"></li>
+      <li style="width:<%=story_page.right_width%>px; background:url(<%=story_page.right.url%>) no-repeat left center;"></li>
     </ul>
 
     <div class="desc">
