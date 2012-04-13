@@ -16,6 +16,24 @@ class StoryPage < ActiveRecord::Base
     right.url
   end
 
+  def left_width
+    get_image_width('left')
+  end
+  
+  def main_width
+    get_image_width('main')
+  end
+  
+  def right_width
+    get_image_width('right')
+  end
+  
+
+  def get_image_width(file_field)
+    image_geo = Paperclip::Geometry.from_file(eval(file_field))
+    image_geo.width
+  end
+
   def next
     StoryPage.where('story_pages.id > ?', self.id).first
   end
